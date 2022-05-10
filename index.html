@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="author" content="lucas melo - Desenvolvedor web">
-    <meta name="description" content="Site responsivo para cinica odontologica">
-    <meta name="keywords" content="sites, web, desenvolvimento">
+    <meta name="description" content="Clínica Sorriso Prolike - Sua clínica Odontologica">
+    <meta name="keywords" content="Implantes, Restauração, Extração, Clareamento">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsiv.css">
@@ -25,10 +25,12 @@
                 onmouseout="this.src='imagens/logoprolike125px.png'" alt="lucas melo"></a>
 
         <nav>
+            <!--Links de navegação para dentro da mesma página-->
             <a class="menu" href="index.html">Home</a>
-            <a class="menu" href="#">Tratamentos</a>
-            <a class="menu" href="#">Sobre</a>
-            <a class="menu" href="#">Contatos</a>
+            <a class="menu" href="#tratamento">Tratamentos</a>
+            <a class="menu" href="#convenios">Convênios</a>
+            <a class="menu" href="#sobre">Sobre</a>
+            <a class="menu" href="#contatos">Contatos</a>
         </nav>
     </header>
 
@@ -43,7 +45,7 @@
             </div>
         </section>
 
-        <h3 class="contener-tratamento-h3">TRATAMENTOS ODONTOLÓGICOS</h3>
+        <h3 id="tratamento" class="contener-tratamento-h3">TRATAMENTOS ODONTOLÓGICOS</h3>
 
         <section class="contener-tratamento">
 
@@ -55,52 +57,67 @@
             </div>
             <div class="contener-tratamento-img">
                 <a href="#">
-                    <img src="imagens/molde-350x272cm.jpg" alt="molde-350x272cm.jpg">
+                    <figure><img src="imagens/molde-350x272cm.jpg" alt="molde-350x272cm.jpg"></figure>
                     <p class="contener-tratamento-legenda">Legenda</p>
                 </a>
             </div>
             <div class="contener-tratamento-img">
                 <a href="#">
-                    <img src="imagens/molde-350x272cm.jpg" alt="molde-350x272cm.jpg">
+                    <figure><img src="imagens/molde-350x272cm.jpg" alt="molde-350x272cm.jpg"></figure>
                     <p class="contener-tratamento-legenda">Legenda</p>
                 </a>
             </div>
             <div class="contener-tratamento-img">
                 <a href="#">
-                    <img src="imagens/molde-350x272cm.jpg" alt="molde-350x272cm.jpg">
+                    <figure><img src="imagens/molde-350x272cm.jpg" alt="molde-350x272cm.jpg"></figure>
                     <p class="contener-tratamento-legenda">Legenda</p>
                 </a>
             </div>
             <div class="contener-tratamento-img">
                 <a href="#">
-                    <img src="imagens/molde-350x272cm.jpg" alt="molde-350x272cm.jpg">
+                    <figure><img src="imagens/molde-350x272cm.jpg" alt="molde-350x272cm.jpg"></figure>
                     <p class="contener-tratamento-legenda">Legenda</p>
                 </a>
             </div>
             <div class="contener-tratamento-img">
                 <a href="#">
-                    <img src="imagens/molde-350x272cm.jpg" alt="molde-350x272cm.jpg">
+                    <figure><img src="imagens/molde-350x272cm.jpg" alt="molde-350x272cm.jpg"></figure>
                     <p class="contener-tratamento-legenda">Legenda</p>
                 </a>
             </div>
         </section>
 
-        <h3 class="contener-tratamento-h3">CONVÊNIOS PARCEIROS</h3>
+        <h3 id="convenios" class="contener-tratamento-h3">CONVÊNIOS PARCEIROS</h3>
 
         <section class="contener-convenio">
 
             <div class="contener-convenio-logo">
-                <img src="imagens/convenios/molde-conveni-225x175px.jpg" alt="molde-conveni-225x175px.jpg">
+                <figure><img src="imagens/convenios/molde-conveni-225x175px.jpg" alt="molde-conveni-225x175px.jpg"></figure>
             </div>
             <div class="contener-convenio-logo">
-                <img src="imagens/convenios/molde-conveni-225x175px.jpg" alt="molde-conveni-225x175px.jpg">
+                <figure><img src="imagens/convenios/molde-conveni-225x175px.jpg" alt="molde-conveni-225x175px.jpg"></figure>
             </div>
             <div class="contener-convenio-logo">
-                <img src="imagens/convenios/molde-conveni-225x175px.jpg" alt="molde-conveni-225x175px.jpg">
+                <figure><img src="imagens/convenios/molde-conveni-225x175px.jpg" alt="molde-conveni-225x175px.jpg"></figure>
+            </div>
+            <div class="contener-convenio-logo">
+                <figure><img src="imagens/convenios/molde-conveni-225x175px.jpg" alt="molde-conveni-225x175px.jpg"></figure>
+            </div>
+            <div class="contener-convenio-logo">
+                <figure><img src="imagens/convenios/molde-conveni-225x175px.jpg" alt="molde-conveni-225x175px.jpg"></figure>
+            </div>
+            <div class="contener-convenio-logo">
+                <figure><img src="imagens/convenios/molde-conveni-225x175px.jpg" alt="molde-conveni-225x175px.jpg"></figure>
+            </div>
+            <div class="contener-convenio-logo">
+                <figure><img src="imagens/convenios/molde-conveni-225x175px.jpg" alt="molde-conveni-225x175px.jpg"></figure>
+            </div>
+            <div class="contener-convenio-logo">
+                <figure><img src="imagens/convenios/molde-conveni-225x175px.jpg" alt="molde-conveni-225x175px.jpg"></figure>
             </div>
         </section>
 
-        <h3 class="contener-tratamento-h3">SOBRE NÓS</h3>
+        <h3 id="sobre" class="contener-tratamento-h3">SOBRE NÓS</h3>
 
         <section class="contener-sobre">
             <div class="contener-sobre-p">
@@ -121,7 +138,7 @@
         </section>
     </main>
 
-    <footer class="contener-footer">
+    <footer id="contatos" class="contener-footer">
         <a class="contener-footer-logo" href="#">
             <img src="imagens/logoprolike125px.png"
                 onmouseover="this.src='./imagens/logoprolike02.png'"
