@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: bolde;
+    src: url(fontes/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: regular;
+    src: url(fontes/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: light;
+    src: url(fontes/Montserrat-Light.ttf);
+}
+
+
+/*reset html*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/*root paleta de cores*/
+:root{
+    --azulagua: #21F0B5;
+    --verdetifane: #0CF76E;
+    --verdeclaro: #41F70C;
+    --verdeamarelo: #96F011;
+    --verdeescuro: #00E01A;
+    --verdeescuroforte: #0C610B;
+}
+
+body{
+    max-width: 1800px;
+    background-color: rgba(230, 228, 228, 0.192);
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    margin: 0px auto;
+}
+
+
+/*stylo header*/
+.contener-header{
+    background-color: var(--verdeamarelo);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+    width: 100%;
+}
+nav{
+    display: flex;
+}
+.menu{
+    text-decoration: none;
+    font-family: regular;
+    font-size: 1.4rem;
+    color: var(--verdeescuroforte);
+    padding: 20px;
+    border-radius: 10px;
+}
+.menu:hover{
+    color: white;
+    background-color: var(--verdeescuroforte);
+    transition: 0.5s;
+}
+
+
+/*stylo banner*/
+.banner{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 40px;
+    background-image: url(imagens/moldebanner\ 021440x450.jpg);
+    background-repeat: no-repeat;
+    border-top: 3px solid var(--verdeescuroforte);
+    border-bottom: 3px solid var(--verdeescuroforte);
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: left;
+}
+.banner-texto{
+    max-width: 50vw;
+    height: 400px;
+    padding: 20px;
+}
+.banner-texto-h1{
+    font-family: bolde;
+    font-size: 4rem;
+    font-weight: normal;
+    color: var(--verdeescuroforte);
+}
+.banner-texto-h2{
+    font-family: light;
+    font-size: 1.7rem;
+    font-weight: normal;
+    color: white;
+}
+.banner-texto-a{
+    text-decoration: none;
+    font-family: bolde;
+    color: var(--verdeescuroforte);
+    background-color: var(--verdeamarelo);
+    border-radius: 2px;
+    padding: 20px 40px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.11);
+}
+.banner-texto-a:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+
+
+/*stylo tratamento - h3*/
+.contener-tratamento-h3{
+    font-family: bolde;
+    font-size: 2.5rem;
+    color: var(--verdeescuroforte);
+    text-align: center;
+    margin: 20px;
+}
+/* Pseudo-elements ::after e ::before - SERVE PARA SEPARAR POR LINHAS - NÃO PRECISA CRIAR DIV*/
+.contener-tratamento-h3::after{
+    content: '';
+    width: 200px;
+    height: 3px;
+    background: var(--verdeescuroforte);
+    display: block;
+    margin: 5px auto;
+    border-radius: 20px;
+}
+
+
+/*section tratamento*/
+.contener-tratamento{
+    max-width: 1800vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.contener-tratamento-img{
+    text-decoration: none;
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.10);
+}
+.contener-tratamento-img:hover{
+    background-color: var(--verdeamarelo);
+    transition: 00.5s;
+}
+.contener-tratamento-legenda{
+    font-family: regular;
+    color: var(--verdeescuroforte);
+    font-size: 1.5rem;
+    text-align: justify;
+    text-decoration: none;
+    padding: 20px;
+
+}
+
+
+/*section convenio*/
+.contener-convenio{
+    background-image: linear-gradient(to right, #96F011, #21F0B5);
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.10); /*borda interna*/
+    max-width: 1800vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.contener-convenio-logo{
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.10);
+}
+
+
+/*section sobre nós*/
+.contener-sobre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contener-sobre-p{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    max-width: 50vw;
+    padding: 20px;
+    margin: 40px;
+    font-family: regular;
+    font-size: 1.3rem;
+    font-size: normal;
+    line-height: 2rem; /*altura das letras*/
+    color: var(--verdeescuroforte);
+}
+.contener-sobre-img{
+    max-width: 50vw;
+    height: 500px;
+}
+
+
+/*style footer*/
+.contener-footer{
+    background-color: var(--verdeamarelo);
+    margin-top: 100px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contener-footer-logo{
+    max-width: 50%;
+}
+.contener-footer-logo{
+    width: 125px;
+}
+.contener-footer-menu-a{
+    font-family: light;
+    color: var(--verdeescuroforte);
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+.contener-footer-menu-a:hover{
+    color: white;
+    background-color: var(--verdeescuroforte);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.contener-footer-icones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+    padding: 10px;
+    color: var(--verdeescuroforte);
+}
+
+#icones{
+    padding: 3px;
+}
+.fa-facebook:hover{
+    color: white;
+    transition: 0.5s;
+}
+.fa-instagram-square:hover{
+    color: white;
+    transition: 0.5s;
+}
+.fa-location-check:hover{
+    color: white;
+    transition: 0.5s;
+}
+.fa-whatsapp-square:hover{
+    color: white;
+    transition: 0.5s;
+}
+.fa-map-location-dot:hover{
+    color: white;
+    transition: 0.5s;
+}
+.fa-whatsapp-square:hover{
+    color: white;
+    transition: 0.5s;
+}
+.fa-map-location-dot:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+h4{
+    color: white;
+    font-family: light;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: normal;
+    padding: 10px;
+    background-color: #96F011;
+    border-top: 1px solid #0C610B;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.10);
+}
