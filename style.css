@@ -23,6 +23,10 @@
     text-decoration: none;
 }
 
+/*efeito de rolagem lenta para links*/
+html{
+    scroll-behavior: smooth;
+}
 
 /*root paleta de cores*/
 :root{
