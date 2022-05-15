@@ -41,7 +41,7 @@
                     avaliação com um dentista!</h1>
                 <h2 class="banner-texto-h2">Logo entraremos em contato.</h2>
                 <br /><br />
-                <a class="banner-texto-a" href="#">AGENDAR</a>
+                <a class="banner-texto-a" href="https://api.whatsapp.com/send?phone=558632237070&text=Oi%2c+gostaria+de+agendar+uma+consulta">AGENDAR</a>
             </div>
         </section>
 
@@ -168,7 +168,13 @@
 
 <!--mapa de navegação-->
         <section>
-            <h3 id="localizacao" class="contener-tratamento-h3">Localização</h3>
+            <h3 id="localizacao" class="contener-tratamento-h3">LOCALIZAÇÃO</h3>
+
+            <div class="contener-endereco">
+                <i id="contener-endereco-icon" class="fa-solid fa-map-location-dot"></i>
+                <h3 class="contener-endereco-h3">Onde Estamos</h3>
+                <p class="contener-endereco-p">Rua Rui Barbosa, <br> Quadra 5, Casa 6 <br> São Joaquim, Teresina-PI</p>
+            </div>
             
             <iframe class="contenermapa" src="https://www.google.com/maps/embed?pb=!1m22!1m8!1m3!1d7948.554297015519!2d-42.8341255!3d-5.0587594!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-5.0486507!2d-42.8150322!4m5!1s0x78e39a78f5bb08d%3A0xa67a20cbe7c460fc!2sclinica%20sorriso%20pro%20like%20teresina!3m2!1d-5.0599229!2d-42.8308904!5e0!3m2!1spt-BR!2sbr!4v1652312235901!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
@@ -189,10 +195,12 @@
         </div>
 
         <div class="contener-footer-icones">
-            <i id="icones" class="fa-brands fa-facebook"></i>
-            <i id="icones" class="fa-brands fa-instagram-square"></i>
-            <i id="icones" class="fa-solid fa-location-check"></i>
-            <i id="icones" class="fa-brands fa-whatsapp-square"></i>
+            <a class="icone-maps" href="#localizacao"><i id="icones" class="fa-brands fa-facebook"></i></a>
+
+            <a class="icone-maps" href="https://www.instagram.com/clinicasorrisoprolike/" target="_blank"><i id="icones" class="fa-brands fa-instagram-square"></i></a>
+
+            <a class="icone-maps" href="https://api.whatsapp.com/send?phone=558632237070&text=Oi%2c+gostaria+de+agendar+uma+consulta" target="_blank"><i id="icones" class="fa-brands fa-whatsapp-square"></i></a>
+
             <a class="icone-maps" href="#localizacao"><i id="icones" class="fa-solid fa-map-location-dot"></i></a>
         </div>
     </footer>
