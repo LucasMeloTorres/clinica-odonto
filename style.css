@@ -215,6 +215,40 @@ nav{
     height: 500px;
 }
 
+/*contener entistas*/
+.contener-dentista{
+    background-color: var(--verdeamarelo);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.10);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.contener-dentista-img{
+    justify-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contener-img{
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.10);
+}
+
+.contener-dentista-p{
+    text-align: center;
+    color: var(--verdeescuroforte);
+    font-family: light;
+    font-size: 1.3rem;
+}
+
+/*style mapa*/
+.contenermapa{
+    width: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.10);
+}
 
 /*style footer*/
 .contener-footer{
@@ -285,6 +319,9 @@ nav{
 .fa-map-location-dot:hover{
     color: white;
     transition: 0.5s;
+}
+.icone-maps, a{
+    color: var(--verdeescuroforte);
 }
 
 h4{
