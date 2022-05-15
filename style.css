@@ -57,7 +57,9 @@ body{
     width: 100%;
 }
 nav{
-    display: flex;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .menu{
     text-decoration: none;
