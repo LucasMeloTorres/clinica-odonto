@@ -1,4 +1,75 @@
-@media screen and (max-width: 1000px) {
+/*responsiv img banner*/
+@media screen and (max-width: 1388px){
+    .banner{
+        background-position: center;
+    } 
+}
 
-    
+/*responsiv texto banner*/
+@media screen and (max-width: 1210px){
+    .banner-texto{
+    max-width: 60vw;
+    }
+    .banner-texto-h2{
+        font-size: 2rem;
+}
+}
+
+/*responsiv img banner sobre nós*/
+@media screen and (max-width: 1188px){
+.contener-sobre{
+    display: block;
+    text-align: center;
+}
+.contener-sobre-p{
+    margin: 0px auto;
+    width: 90%;
+}
+}
+
+/*responsiv img banner parallax*/
+@media screen and (max-width: 1064px){
+/*contener entistas / banner parallax*/
+.contener-dentista{
+    background-image: linear-gradient(to left, #97f011b7 50%, #97f011b7), url(imagens/dentista.jpeg);
+    background-position: center;
+}  
+}
+
+/*responsiv remover img banner*/
+@media screen and (max-width: 1388px){
+    .banner{
+        border: 0px;
+        padding: 0px;
+        display: flexbox;
+        justify-content: center;
+        background-image: linear-gradient(to left, #97f011b7 50%, #97f011b7), url(imagens/moldebanner\ 021440x450.jpg);
+    }
+    .banner-texto-h1{
+        text-align: center;
+        font-size: 4.5rem;
+        color: var(--verdeescuroforte);
+    }
+    .banner-texto-h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .banner-texto-a{
+        display: block;
+        width: 400px;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (max-width: 1351px){
+    .banner-texto-h1{
+        font-size: 4rem;
+    }
+    .banner-texto-h2{
+        font-size: 3rem;
+    }
+    .banner-texto-a{
+        display: block;
+        text-align: center;
+    }
 }

@@ -200,23 +200,22 @@ nav{
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.10);
     border-radius: 5px;
-    max-width: 50vw;
+    width: 50%;
     padding: 20px;
     margin: 40px;
     font-family: regular;
-    font-size: 1.3rem;
+    font-size: 1.3em;
     font-size: normal;
     line-height: 2rem; /*altura das letras*/
     color: var(--verdeescuroforte);
 }
 .contener-sobre-img{
-    max-width: 50vw;
     height: 500px;
 }
 
-/*contener entistas*/
+/*contener entistas / banner parallax*/
 .contener-dentista{
-    background-image: linear-gradient(to left, #00000000 50%, #97f011b7), url(imagens/dentista.jpeg);
+    background-image: linear-gradient(to left, #97f011b7 50%, #97f011b7), url(imagens/dentista.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -244,10 +243,10 @@ nav{
 
 .contener-dentista-p{
     text-align: center;
-    color: var(--verdeescuroforte);
+    color: white;
     font-family: light;
     font-size: 1.3rem;
-    background-color: rgba(255, 255, 255, 0.24);
+    background-color: var(--verdeescuroforte);
     border-radius: 3px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.10);
     padding: 10px;
@@ -259,8 +258,8 @@ nav{
     z-index: 10;
     display: flexbox;
     background-color: var(--verdeamarelo);
-    width: 25%;
-    height: 50%;
+    width: 400px;
+    height: 300px;
     font-family: light;
     font-size: normal;
     text-align: center;
