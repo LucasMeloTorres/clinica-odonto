@@ -24,13 +24,20 @@
                 onmouseover="this.src='./imagens/logoprolike02.png'"
                 onmouseout="this.src='imagens/logoprolike125px.png'" alt="lucas melo"></a>
 
-        <nav>
-            <!--Links de navegação para dentro da mesma página-->
+        <nav id="nav">
+<!--botão menu burger responsiv-->
+        <button id="btn-mobile" aria-expanded="false">
+            <span id="hamburguer"></span>
+        </button>
+
+<!--Links de navegação para dentro da mesma página-->
+            <ul id="contener-menu">
             <a class="menu" href="index.html">Home</a>
             <a class="menu" href="#tratamento">Tratamentos</a>
             <a class="menu" href="#convenios">Convênios</a>
             <a class="menu" href="#sobre">Sobre</a>
             <a class="menu" href="#contatos">Contatos</a>
+        </ul>
         </nav>
     </header>
 
@@ -205,5 +212,7 @@
         </div>
     </footer>
         <h4>Desenvolvido por: Lucas Melo &copy</h4>
+
+<script src="btn-mobile.js"></script>
 </body>
 </html>

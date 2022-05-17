@@ -1,75 +1,94 @@
-/*responsiv img banner*/
-@media screen and (max-width: 1388px){
-    .banner{
-        background-position: center;
-    } 
+/*responsiv contener texto banner*/
+@media screen and (max-width: 1216px){
+    .banner-texto-h1{ /*responsiv texto banner*/
+        font-size: 3rem;
+    }
+
+    /*responsiv texto sobre nós*/
+    .contener-sobre{
+       flex-direction: column;
+    }
+    .contener-sobre-p{
+        width: 80%;
+        text-align: center;
+    }
 }
 
-/*responsiv texto banner*/
-@media screen and (max-width: 1210px){
-    .banner-texto{
-    max-width: 60vw;
+@media screen and (max-width: 925px){
+    .banner-texto-h1{
+        font-size: 2.9rem;
     }
     .banner-texto-h2{
-        font-size: 2rem;
-}
-}
+        font-size: 1.5rem;
 
-/*responsiv img banner sobre nós*/
-@media screen and (max-width: 1188px){
-.contener-sobre{
-    display: block;
-    text-align: center;
-}
-.contener-sobre-p{
-    margin: 0px auto;
-    width: 90%;
-}
-}
-
-/*responsiv img banner parallax*/
-@media screen and (max-width: 1064px){
-/*contener entistas / banner parallax*/
-.contener-dentista{
-    background-image: linear-gradient(to left, #97f011b7 50%, #97f011b7), url(imagens/dentista.jpeg);
-    background-position: center;
-}  
-}
-
-/*responsiv remover img banner*/
-@media screen and (max-width: 1388px){
-    .banner{
-        border: 0px;
-        padding: 0px;
-        display: flexbox;
-        justify-content: center;
-        background-image: linear-gradient(to left, #97f011b7 50%, #97f011b7), url(imagens/moldebanner\ 021440x450.jpg);
     }
-    .banner-texto-h1{
-        text-align: center;
-        font-size: 4.5rem;
+}
+
+/*menu burger*/
+@media screen and (max-width: 897px){
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1.2rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    #hamburguer{
+        width: 30px;
+        height: 3px;
+        border-top: 2px solid;
+        display: block;
         color: var(--verdeescuroforte);
     }
-    .banner-texto-h2{
-        font-size: 3rem;
-        text-align: center;
-    }
-    .banner-texto-a{
+    #hamburguer::after, #hamburguer::before{
+        content: '';
         display: block;
-        width: 400px;
-        margin: 0px auto;
+        width: 30px;
+        height: 3px;
+        margin-top: 5px;
+        background-color: currentColor;
+        transition: .3s;
+        position: relative;
+        
     }
-}
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    
+    }
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    
+    }
 
-@media screen and (max-width: 1351px){
-    .banner-texto-h1{
-        font-size: 4rem;
-    }
-    .banner-texto-h2{
-        font-size: 3rem;
-    }
-    .banner-texto-a{
+
+/*menu links*/
+    .menu{
         display: block;
-        text-align: center;
+        border-bottom: 2px solid #3c640049;
+        width: 100vw;
     }
+
+    #contener-menu{
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+        top: 106px;
+        right: 0px;
+        background-color: var(--verdeamarelo);
+    }
+
+    #nav.active #contener-menu{
+        display: block;
+        height: calc( 100vh - 106px);
+        
+    }
+    
 }

@@ -56,6 +56,13 @@ body{
     padding: 10px 0px;
     width: 100%;
 }
+
+/*stylo botão burger responsiv*/
+#btn-mobile{
+    display: none;
+}
+
+
 nav{
     display: inline-block;
     flex-wrap: wrap;
