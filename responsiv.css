@@ -39,7 +39,7 @@
     #hamburguer{
         width: 30px;
         height: 3px;
-        border-top: 2px solid;
+        border-top: 3px solid;
         display: block;
         color: var(--verdeescuroforte);
     }
@@ -89,6 +89,38 @@
         display: block;
         height: calc( 100vh - 106px);
         
+    }
+
+    .banner-texto-h1{
+        font-size: 2.4rem;
+        margin-top: 40px;
+    }
+    .banner-texto-h2{
+        font-size: 1.4rem;
+
+    }
+
+    @media screen and (max-width: 758px){
+        
+        .banner-texto-h1{
+            font-size: 2.3rem;
+            margin-top: 20px;
+        }
+        .banner-texto-h2{
+            font-size: 1.2rem;
+    
+        }
+
+        .banner{
+            background-position: center;
+        }
+        .banner-texto-a{
+            padding: 15px 30px;
+        }
+        .banner-texto{
+            padding: 10px;
+            margin-top: 20px;
+        }
     }
     
 }
