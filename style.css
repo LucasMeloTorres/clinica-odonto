@@ -26,6 +26,7 @@
 /*efeito de rolagem lenta para links*/
 html{
     scroll-behavior: smooth;
+    font-family: sans-serif;
 }
 
 /*root paleta de cores*/
