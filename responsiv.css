@@ -158,5 +158,47 @@
         }
     
     }
-    
+
+    @media screen and (max-width: 493px){
+        .banner{
+            background-position: left;
+            justify-content: center;
+        }
+        .banner-texto{
+            max-width: 100vw;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .contener-tratamento-h3{
+            font-size: 1.3rem;
+        }
+        .contener-tratamento-h3::after{
+            width: 100px;
+            height: 2px;
+        }
+
+        .contener-convenio-logo{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contener-convenio-logo img{
+            width: 70%;
+            margin: 5px;
+            border: 3px solid var(--verdeamarelo);
+        }
+
+        .contener-sobre-p{
+            width: 90%;
+            margin: 10px;
+            font-size: .8em;
+            text-align: justify;
+        }
+        .contener-sobre-img{
+            display: none;
+        }
+
+
+    }
 }
