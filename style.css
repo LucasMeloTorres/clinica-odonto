@@ -303,6 +303,7 @@ nav{
 
 .contener-endereco-p{
     color: var(--verdeescuroforte);
+    font-family: light;
     font-size: 1.5rem;
     line-height: 2rem;
 }
